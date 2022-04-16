@@ -55,7 +55,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Plant
-  m_Speed: 0.023
+  m_Speed: 0.01904762
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []

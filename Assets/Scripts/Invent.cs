@@ -35,6 +35,8 @@ public class Invent : MonoBehaviour
     Text textComponent2;
     public GameObject TextObject3;
     Text textComponent3;
+    public GameObject TextTableUpdate;
+    Text textTableUpdate;
     public GameObject TextObject4;
     TextMeshProUGUI textComponent4;
     public GameObject TextObject01;
@@ -64,6 +66,10 @@ public class Invent : MonoBehaviour
     public Plant plantData;
     public Animator plantAnim;
 
+    public GameObject invent;
+    
+    [SerializeField] private float _persentShowAds;
+    
 
     void Start()
     {
@@ -89,6 +95,7 @@ public class Invent : MonoBehaviour
         textComponent1 = TextObject1.GetComponent<Text>();
         textComponent2 = TextObject2.GetComponent<Text>();
         textComponent3 = TextObject3.GetComponent<Text>();
+        textTableUpdate = TextTableUpdate.GetComponent<Text>();
         textComponent01 = TextObject01.GetComponent<TextMeshProUGUI>();
         textComponent02 = TextObject02.GetComponent<TextMeshProUGUI>();
         textComponent03 = TextObject03.GetComponent<TextMeshProUGUI>();
@@ -97,8 +104,19 @@ public class Invent : MonoBehaviour
         
         textComponent1.text = problem1.ToString();
         textComponent2.text = problem2.ToString();
+        textComponent3.text = problem3.ToString();
+        textTableUpdate.text = problem4.ToString();
+
+        InterstitialAd.S.LoadAd();
+        //RewardedAds.S.LoadAd();
     }
 
+    public void OpenInvent()
+    {
+        invent.SetActive(!invent.active);
+    }
+    
+    
     public void ClickFun()
     {
         anim.SetTrigger("Active");
@@ -126,6 +144,10 @@ public class Invent : MonoBehaviour
             stone4 += farm;
             // ДобавитьПредметВСумку( предмет #3 );
         }
+        float tempPersent = Random.Range(0f, 1f);
+
+        if (tempPersent < _persentShowAds)
+            InterstitialAd.S.ShowAd();
     }
 
     public void ImproveTheShovel()
@@ -237,7 +259,13 @@ public class Invent : MonoBehaviour
             coin -= problem4;
             p1 += 10;
             problem4 *= 2;
+            textTableUpdate.text = problem4.ToString();
         }
+    }
+
+    public void GetGoldAfterReward(int gold)
+    {
+        coin += gold;
     }
     
     void Update()
