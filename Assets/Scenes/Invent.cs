@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 
 using UnityEngine.UI;
@@ -9,7 +6,6 @@ using UnityEngine.UI;
 public class Invent : MonoBehaviour
 {
     Animator anim;
-    public Animator plant_amim;
     public int plant_has_grown;
     public static int coin;
     public static int farm;
@@ -56,6 +52,7 @@ public class Invent : MonoBehaviour
     private int dd1;
     private int dd2;
     public GameObject Plant;
+    public Animator plantAnimation;
     public GameObject Plant2;
     
     
@@ -90,6 +87,8 @@ public class Invent : MonoBehaviour
         
         anim = gameObject.GetComponent<Animator>();
         textComponent = TextObject.GetComponent <Text> ();
+
+        plantAnimation = Plant.GetComponent<Animator>();
         
         
         textComponent1 = TextObject1.GetComponent <Text> ();
@@ -106,7 +105,9 @@ public class Invent : MonoBehaviour
     public void ClickFun()
     {
         
-        anim.SetTrigger("Active");var range = UnityEngine.Random.Range( 0, 101 );
+        anim.SetTrigger("Active");
+        var range = UnityEngine.Random.Range( 0, 101 );
+        
         if( 101 >= range && range >= 50+p1 )
         {
             stone = stone + farm;
@@ -155,6 +156,7 @@ public class Invent : MonoBehaviour
             if (plant_has_grown == 2)
             {
                 Plant.SetActive(false);
+                plantAnimation.keepAnimatorControllerStateOnDisable = false;
                 coin += 50;
                 plant_has_grown = 0;
             }
@@ -189,8 +191,10 @@ public class Invent : MonoBehaviour
             {
                 stone -= 50;
                 Plant.SetActive(true);
+                plantAnimation.Play("Plant 1", -1, 0f);
                 plant_has_grown = 1;
                 TextObject4.SetActive(true);
+                plantAnimation.keepAnimatorControllerStateOnDisable = true;
             }
             dd2 = 0;
         }
@@ -221,7 +225,6 @@ public class Invent : MonoBehaviour
 
     void Update()
     {
-        
             textComponent.text = coin.ToString();
             textComponent01.text = stone.ToString(); 
             textComponent02.text = stone2.ToString();
