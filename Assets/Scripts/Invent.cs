@@ -30,13 +30,13 @@ public class Invent : MonoBehaviour
 
 
     public GameObject TextObject1;
-    Text textComponent1;
+    TextMeshProUGUI textComponent1;
     public GameObject TextObject2;
-    Text textComponent2;
+    TextMeshProUGUI textComponent2;
     public GameObject TextObject3;
-    Text textComponent3;
+    TextMeshProUGUI textComponent3;
     public GameObject TextTableUpdate;
-    Text textTableUpdate;
+    TextMeshProUGUI textTableUpdate;
     public GameObject TextObject4;
     TextMeshProUGUI textComponent4;
     public GameObject TextObject01;
@@ -92,10 +92,10 @@ public class Invent : MonoBehaviour
         
 
 
-        textComponent1 = TextObject1.GetComponent<Text>();
-        textComponent2 = TextObject2.GetComponent<Text>();
-        textComponent3 = TextObject3.GetComponent<Text>();
-        textTableUpdate = TextTableUpdate.GetComponent<Text>();
+        textComponent1 = TextObject1.GetComponent<TextMeshProUGUI>();
+        textComponent2 = TextObject2.GetComponent<TextMeshProUGUI>();
+        textComponent3 = TextObject3.GetComponent<TextMeshProUGUI>();
+        textTableUpdate = TextTableUpdate.GetComponent<TextMeshProUGUI>();
         textComponent01 = TextObject01.GetComponent<TextMeshProUGUI>();
         textComponent02 = TextObject02.GetComponent<TextMeshProUGUI>();
         textComponent03 = TextObject03.GetComponent<TextMeshProUGUI>();
