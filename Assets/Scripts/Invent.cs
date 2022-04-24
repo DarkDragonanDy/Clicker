@@ -9,6 +9,7 @@ public class Invent : MonoBehaviour
     public GameObject[] plants;
     
     Animator anim;
+    public float animSpeedControl = 1f;
     public int plant_has_grown;
     public static int coin;
     public static int farm;
@@ -242,6 +243,8 @@ public class Invent : MonoBehaviour
             plant =  Instantiate(plants[plantID], pos.transform.position, Quaternion.identity) as GameObject;
             plantAnim = plant.GetComponent<Animator>();
             plantAnim.Play("Plant", -1, 0f);
+            // animSpeedControl = 1f / plantData.timeToGrow;
+            // plantAnim.SetFloat("animSpeed", animSpeedControl);
             plant.transform.SetParent(pos.transform);
             plant.transform.localScale = new Vector3(1f, 1f, 1f);
             plant.GetComponent<Animator>().keepAnimatorControllerStateOnDisable = true;

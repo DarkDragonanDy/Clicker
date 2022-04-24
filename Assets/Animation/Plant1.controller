@@ -33,7 +33,13 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Plant1
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: animSpeed
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -55,7 +61,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Plant
-  m_Speed: 0.01904762
+  m_Speed: 0.25
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -69,7 +75,7 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 1a8ed2fb2eafa4164974090317780637, type: 2}
   m_Tag: 
-  m_SpeedParameter: 
+  m_SpeedParameter: animSpeed
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
@@ -84,7 +90,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1622456316135826535}
-    m_Position: {x: 460, y: 100, z: 0}
+    m_Position: {x: 330, y: 170, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

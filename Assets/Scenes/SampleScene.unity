@@ -3296,6 +3296,7 @@ MonoBehaviour:
   - {fileID: 2077984516626551260, guid: 71233dfb50b0e9e47a884ee75ddd0a69, type: 3}
   - {fileID: 8436530133317523418, guid: f0ce25b7e164a434f803313874fd25b8, type: 3}
   - {fileID: 5133069491657298847, guid: 3e9c5a5ce95b97a40ab580f8cb2542b3, type: 3}
+  animSpeedControl: 1
   plant_has_grown: 0
   stone: 50
   stone2: 30
@@ -6819,7 +6820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536025449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 44, z: -4923.025}
+  m_LocalPosition: {x: 0, y: 44, z: 0}
   m_LocalScale: {x: 270.2194, y: 270.2194, z: 270.2194}
   m_ConstrainProportionsScale: 0
   m_Children: []
