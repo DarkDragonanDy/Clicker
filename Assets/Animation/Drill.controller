@@ -32,7 +32,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\xA6\u0421T\u0413T\u0410 \xA6-\xA6-\xA6\xAC\xA6-_0"
+  m_Name: Drill
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
