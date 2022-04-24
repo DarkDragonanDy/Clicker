@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 764dd39bf85304e8aa0e582c1d20d5de
+guid: dc79fdbe2490ad446932a0a356da5e19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -112,17 +112,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueFruitPlant_6
+      name: WaterEgg_0
       rect:
         serializedVersion: 2
-        x: 467
+        x: 91
         y: 0
-        width: 30
-        height: 46
+        width: 8
+        height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,82 +142,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a66fa2a8ce1a4a619bcaf0f56089c46
-      internalID: -306168810
+      spriteID: c95262f47dddd564f8c65f4781a3a8b1
+      internalID: 145622056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueFruitPlant_7
+      name: WaterEgg_1
       rect:
         serializedVersion: 2
-        x: 527
-        y: 0
-        width: 35
-        height: 54
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e393207f30f8e43c28f359bcfe5c7b9c
-      internalID: -552103448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueFruitPlant_8
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 0
-        width: 48
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de8b4ca76038e42589d39d6b0877f68b
-      internalID: -1950056801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueFruitPlant_0
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 0
-        width: 7
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81960cbf85d2549848c376bc1816ea1c
-      internalID: -1354996843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueFruitPlant_3
-      rect:
-        serializedVersion: 2
-        x: 282
+        x: 154
         y: 0
         width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9005b0dfde4594fb28c8e7aa377cc3
+      internalID: 1423673794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterEgg_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 16
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68af549049eccf240a464ad2a599fec2
+      internalID: 263665360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterEgg_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 0
+        width: 19
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -214,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5b4fff010cfa4d9d887e9f005246d0a
-      internalID: 445048449
+      spriteID: 19777d3829b400f4a99b2cbf4d1b2364
+      internalID: 197286929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueFruitPlant_4
+      name: WaterEgg_4
       rect:
         serializedVersion: 2
-        x: 343
+        x: 342
         y: 0
-        width: 20
-        height: 36
+        width: 21
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2d07dcf4ab6f4056bcfe485313a6ee8
-      internalID: 1110652325
+      spriteID: dd6206a334797ba488475d5ff55f127c
+      internalID: -1923597651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueFruitPlant_5
+      name: WaterEgg_5
       rect:
         serializedVersion: 2
-        x: 408
+        x: 404
         y: 0
-        width: 22
-        height: 48
+        width: 26
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90532ad80cd2a437685c0d5e0c917209
-      internalID: -730485237
+      spriteID: 8d20ff49803d60f4989bd11b1f792939
+      internalID: 58849044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueFruitPlant_1
+      name: WaterEgg_6
       rect:
         serializedVersion: 2
-        x: 157
+        x: 467
         y: 0
-        width: 7
-        height: 9
+        width: 28
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,29 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 612fb12e212c1f8449c24e0abb402072
-      internalID: 523109587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueFruitPlant_2
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 0
-        width: 9
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf8d69b65410c4e418862eee85f4823b
-      internalID: 169972284
+      spriteID: 4ee0fc37d2c075f46a81229544b487b2
+      internalID: 966312867
       vertices: []
       indices: 
       edges: []
@@ -315,18 +285,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlueFruitPlant_4: 1110652325
-      BlueFruitPlant_0: -1354996843
-      BlueFruitPlant_7: -552103448
-      BlueFruitPlant_6: -306168810
-      BlueFruitPlant_3: 445048449
-      BlueFruitPlant_1: 523109587
-      BlueFruitPlant_2: 169972284
-      BlueFruitPlant_5: -730485237
-      BlueFruitPlant_8: -1950056801
+      WaterEgg_3: 197286929
+      WaterEgg_5: 58849044
+      WaterEgg_4: -1923597651
+      WaterEgg_0: 145622056
+      WaterEgg_1: 1423673794
+      WaterEgg_2: 263665360
+      WaterEgg_6: 966312867
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
