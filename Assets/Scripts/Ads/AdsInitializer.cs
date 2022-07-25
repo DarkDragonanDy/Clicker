@@ -17,7 +17,7 @@ public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener
 
     public void InitializeAds()
     {
-        _gameId = (Application.platform == RuntimePlatform.IPhonePlayer)
+        _gameId = (Application.platform == RuntimePlatform.IPhonePlayer)    
             ? _iOSGameId
             : _androidGameId;
 

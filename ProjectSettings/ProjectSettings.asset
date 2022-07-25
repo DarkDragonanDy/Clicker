@@ -732,7 +732,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Analytics: 1
-    Build: 1
+    Build: 0
     Collab: 0
     Game Performance: 0
     Legacy Analytics: 0
@@ -752,10 +752,10 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: b9c3bf11-3a8d-4524-8307-faef21b60f79
+  cloudProjectId: 24ab1021-83c4-41ce-817d-b161ceb8da37
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Bortenfor
+  projectName: Clicker
   organizationId: darkdragon1113
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

@@ -60,7 +60,7 @@ public class Invent : MonoBehaviour
     public static int problem2;
     public static int problem3;
     public static int problem4;
-    public static int p1;
+    public static int perсentToGetSeed;
     public static int p2;
 
     public GameObject plant;
@@ -85,7 +85,7 @@ public class Invent : MonoBehaviour
         problem2 = 50;
         problem3 = 20;
         problem4 = 100;
-        p1 = 0;
+        perсentToGetSeed = 0;
         p2 = 1;
 
         anim = gameObject.GetComponent<Animator>();
@@ -121,33 +121,28 @@ public class Invent : MonoBehaviour
     public void ClickFun()
     {
         anim.SetTrigger("Active");
-        var range = UnityEngine.Random.Range(0, 101);
+        var range = Random.Range(0, 101);
 
-        if (101 >= range && range >= 50 + p1)
+        if (101 >= range && range >= 50 + perсentToGetSeed)
         {
             stone += farm;
-        }
-
-        if (50 + p1 > range && range >= 25 + (p1 * 0.4))
+        } 
+        else if (range >= 25 + perсentToGetSeed * 0.4)
         {
             stone2 += farm;
-            ;
-        }
-
-        if (25 + (p1 * 0.4) > range && range >= 10 * (p1 * 0.1))
+        } 
+        else if (range >= 10 + perсentToGetSeed * 0.1)
         {
             stone3 += farm;
-            // ДобавитьПредметВСумку( предмет #2 );
-        }
-
-        if (10 + (p1 * 0.1) > range)
+        } 
+        else
         {
             stone4 += farm;
-            // ДобавитьПредметВСумку( предмет #3 );
         }
-        float tempPersent = Random.Range(0f, 1f);
+        
+        float tempPercent = Random.Range(0f, 1f);
 
-        if (tempPersent < _persentShowAds)
+        if (tempPercent < _persentShowAds)
             InterstitialAd.S.ShowAd();
     }
 
@@ -260,7 +255,7 @@ public class Invent : MonoBehaviour
         {
             Table.SetActive(true);
             coin -= problem4;
-            p1 += 10;
+            perсentToGetSeed += 10;
             problem4 *= 2;
             textTableUpdate.text = problem4.ToString();
         }
